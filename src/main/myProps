@@ -1,0 +1,4 @@
+user.dir = myDir
+os.name = ubuntu
+sampleProp = This is a sample property
+
