@@ -1,0 +1,10 @@
+{
+"name":"MyKong",
+"occupation":"freelancer",
+"address":{
+"addressLineOne":"Flat 1B",
+"addressLineTwo":"Morocco"
+} ,
+"age":33,
+"sex":"M"
+ }

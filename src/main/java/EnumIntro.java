@@ -1,5 +1,3 @@
-package main;
-
 /**
  * Created by ee on 15/06/15.
  */
