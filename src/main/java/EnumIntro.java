@@ -37,6 +37,7 @@ public static void main(String[] args){
 
     //Enums are type safe, they can have only types defined of that Enum type.
     myEnums myPriorityEnum = myEnums.MEDIUM;
+    System.out.println(myPriorityEnum);
 
 }
 

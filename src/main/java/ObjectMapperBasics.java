@@ -12,12 +12,13 @@ public class ObjectMapperBasics {
 
     public static void main(String[] args) {
 
-
+        ObjectMapper mapper = new  ObjectMapper();
+//        mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES,false);
         Map<String,String> address = new HashMap<String,String>();
         address.put("addressLineOne", "Flat abc");
         address.put("addressLineTwo", "Milan");
         User user = new User("nameFromClass","newJob",address,22,"F");
-        ObjectMapper mapper = new  ObjectMapper();
+
         //Java to JSON   - generates user.json file
         try{
             mapper.writerWithDefaultPrettyPrinter().writeValue(new File("/home/ee/projects/self/src/main/java/user.json"), user);
@@ -29,7 +30,7 @@ public class ObjectMapperBasics {
         //JSON to Java
         try{
         User userObj = mapper.readValue(new File("/home/ee/projects/self/src/main/java/jsonSample.json"),User.class);
-        System.out.println(userObj.getName());
+        System.out.println(userObj);
         }
         catch(IOException io){
             io.printStackTrace();
