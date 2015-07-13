@@ -1,4 +1,6 @@
 *.iml
 *.ipr
 *.xml
+*.gitignore
+*.name
 
